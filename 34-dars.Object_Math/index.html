@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Math</title>
+</head>
+<body>
+    
+    <script>
+
+        console.log(Math);
+
+        const area = 7.9;
+
+        // Math.round(); soning engyaqin butun qismga yaxlitlaydi 
+
+        // buyerda biz 'area' degan saqlovchi ni ichidagi 7.9 ni Math.round(); bilan 8 ga aylattiryapmiz 
+        // Math.round() butun bolmagan sonlarni engyaqin butun bolgan songa aylantradi 7.9 eng yaqinbolgan butun 
+        // soni bu 8
+        // agar 'area'ni ichida 7.1 bolganida consolga 7 chiqan bolaredi
+
+        console.log(Math.round(area)); // 8
+        
+        // Math.floor(); eng yaqin kichik buttunsonga yaxlitlaydi
+
+        // buyerda biz 'area' degan saqlovchi ni ichidagi 7.9 Math.floor(); bilan 7 ga aylantiramiz
+        // Math.floor(); eng yaqin kichik buttun songa aylantiradi yani bu holata 7 ga chuki agar 8 ga aylantirsa bu 7 dan katta butun son
+        // 7 esa kichik butun son 
+        // agar 'area'ni ichida 6.7 bolganida 6 chiqar edi  
+
+        console.log(Math.floor(area)); // 7
+
+        // Math.ceil(); eng katta butun bolgan songa yaxlitlaydi
+
+        // buyerda biz 'area' saqlovchisi ichidagi 7.9 ni eng yaqin katta buttun songa aylantiryapmiz
+        // Math.ceil(); eng yaqin katta butun songa aylatiradi yani 9.1 bolsa uni 10 ga aylantiradi chinki 9.1 eng yakin katta buttun soni 10
+        // agar 'area'ni ichida 20.1 bolganida 21 chiqar edi
+        // agar 'area'ni ichida -7.1 bosa unda javobga -6 chiqan bolaredi chunki -7.1 dan enkatta va butun son bu -6
+        
+        console.log(Math.ceil(area)); // 8
+
+        // Math.trunc(); soning faqat butun qismini qautaradi
+
+        // buyerda biz 'area' saqlovchisi ichidagi 7.9 ni ozinu butun qilib beradi yani 7
+        // agar 10.9 bolganida javob 10 chiqadi butun bomagan soni butun qilib beradi
+
+        console.log(Math.trunc(area)); // 7
+
+        // Math.random(); 0 va 1 orasligida ixtiyoriy raqamlar qaytaradi
+
+        console.log(Math.random(area)); // ?
+
+        // buyerda biz 'i' saqlovchi yaratib oldik va uni uchiga 'area'ni tengladik unga Math.random berdik yani random sonlar chiqsin dedik 
+        // yani 0 dan 1 gacha undan kegin * 100 ga kopaytirdik endi 0 dan 1 gacha emas 0 dan 99 gacha boldi yonga + 1 deb yozdik endi 0 dan 100 gacha boldi
+        // endi Math.trunc bedik ular son butun bolmasa uni butun songa aylantiradi 
+        // shunda jacobga 0 dan 100 gacha bolga harqnday son chiqadi
+
+        let i = Math.trunc((Math.random(area) * 100) + 1);
+        console.log(i);
+
+    </script>
+
+</body>
+</html>

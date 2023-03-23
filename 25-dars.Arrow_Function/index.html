@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow function</title>
+</head>
+<body>
+    
+    <script>
+
+        // const getFunction = radius => {
+        //     let a = prompt();
+        //     let max = a * radius ** 2;
+        //     return max;
+        // }
+
+        // const b = getFunction(5);
+        // console.log(b);
+
+        // const greet = function(ism) {
+        //     ism = prompt();
+        //     return `Hello ${ism}`;
+        // }
+
+        // const greet = ism => `Hello ${ism}`;
+
+        // let max = greet(ism = prompt());
+        // console.log(max);
+
+        const greet = function(protuct, tax) {
+            let totle = 0;
+
+            for(let i = 0; i < protuct.length; i++) {
+                totle += protuct[i] + protuct[i] * tax;
+            }
+
+            return totle;   
+        }
+
+        const red = greet([10, 13, 45], 0.2);
+        console.log(red);
+
+
+
+        const text = (protuct, tax) => {
+            let rig = 0;
+        
+            // let c = 0;
+            // while(c < protuct.length) {
+            //     c++;
+            //     rig += +protuct[c] + +protuct[c] * tax;
+            // }
+
+            let a = 0;
+            do {
+                rig += protuct[a] + protuct[a] * tax;
+                a++
+            } while(a < protuct.length);
+
+
+            return rig;
+        }
+
+
+        const risolt = text([10, 13, 45], 0.2);
+        console.log(risolt);
+
+    </script>
+
+</body>
+</html>

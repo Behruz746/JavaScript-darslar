@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+
+    <style>
+    
+        body {
+          font-family: 'Prompt', sans-serif;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <h1 id="title">DOM-selectors</h1>
+
+        <ul>
+            <li class="list-item">HTMl</li>
+            <li class="list-item">CSS</li>
+            <li class="list-item">JavaScript</li>
+        </ul>
+
+        <button id="click-btn">ADD NEW</button>
+    </div>
+  
+    <script>
+
+        const listItem = document.getElementsByTagName('li'); // Teg nomlari uchun ishlatiladi
+
+        // console.log(listItem); // elmentlarning hamasi 
+        // console.log(listItem[2]); // 2chi element
+        // console.log(listItem.length); // elementlarning nechtaligi
+
+        const listItems = document.getElementsByClassName('list-item'); // Classlar uchun ishlatiladi
+
+        // console.log(listItems);
+
+        const btn = document.getElementById('click-btn'); // Id lar uchun ishlatiladi
+
+        // console.log(btn);
+
+    </script>
+
+</body>
+</html>

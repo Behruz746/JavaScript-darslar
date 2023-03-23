@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyBoard Events</title>
+</head>
+<body>
+    
+
+    <script>
+
+        // keydown faqatgina keyni bosganda function amalga oshadi
+        // keyup esa faqat keyni qoyvorganigizda function amamlga oshadi
+
+        document.addEventListener('keydown', (e)=> {
+            // console.log(e);
+            // console.log('Code', e.code);
+            // console.log('Key', e.key);
+            // console.log('KeyCode', e.keyCode);
+
+            // ikkita key ni boshak bironbir abal boladigan if else 
+            // buyerda 'ctrl' va m nibosganda consaolga salom defan yozuv chiqadi
+
+            if(e.key == 'm' && e.ctrlKey) {
+                console.log('salom');
+            }
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object This</title>
+</head>
+<body>
+    
+    <script>
+
+        // 'this' bu qayerda qayerda ishlasa osha joyni malumotlarini qaytaradi 
+        // misol: agar biz hechqanday function yoki array, object larni ichiga yozmasdan 
+        // console.log(this);
+        // deb yossak 'this' window, document dan boshlab hamasini malumotlarini chiqaradi
+        // agar biz object ichiga yosak yani:
+
+        // const user = {
+        //     name: 'Behruz',
+        //     age: 16,
+        //     userName: 'Madaminov',
+        //     email: 'madaminovbehruz@997',
+        //     lang: ['Uzbek', 'Russian', 'English'],
+        //     speak: function() {
+        //         this.lang.forEach(i => {
+        //             console.log(i);
+        //         });
+        //     }
+        // };
+
+        // user.speak();
+
+
+
+        const user = {
+            name: 'Behruz',
+            age: 16,
+            userName: 'Madaminov',
+            email: 'madaminovbehruz@997',
+            lang: ['Uzbek', 'Russian', 'English'],
+            speak: function() {
+                this.lang.forEach(i => {
+                    console.log(i);
+                });
+            }
+        };
+
+        user.speak();
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amaliyot 03</title>
+</head>
+<body>
+    
+    <script>
+
+        // // mashq_1
+
+        // console.log('forEach');
+
+
+        // const myArray = [[false, true], [1, 2], 99, 'yaxshi'];
+        // console.log('men qilganim');
+
+        // // men qilganim
+
+        // myArray.forEach((index, leng, i) => {
+        //     let b = myArray[3];
+
+        //     if(index >= 'string') {
+        //         console.log(b, leng, 'index position');
+        //     } else {
+        //         console.log(index);
+        //     }
+        // });
+
+        // console.log('');
+
+        // console.log('forLoop');
+
+        // for(let i = 3; i < myArray.length; i++) {
+
+        //     // console.log(i);
+
+        //     if (myArray[i] >= 'string') {
+        //         console.log(myArray[0]);
+        //         console.log(myArray[1]);
+        //         console.log(myArray[2]);
+        //         console.log(myArray[3], i, 'index position');
+        //     }
+        // };
+
+        // console.log('');
+        // console.log('videoda qilingani');
+        // // videoda qilingani 
+
+        // console.log('');
+        // console.log('forEach');
+
+        // myArray.forEach( (a, i) => {
+        //     if(typeof a == 'string') {
+        //         console.log('String index:', i);
+        //     } 
+        // });
+
+        // console.log('');
+        // console.log('forLoop');
+
+        // for(let i = 0; i < myArray.length; i++) {
+        //     if(typeof myArray[i] == 'string') {
+        //         console.log('String index:', i);
+        //     }
+        // }
+
+        // // mashq_2
+        // // men qilganim
+
+        // console.log('');
+        // console.log('mashq_2');
+        // console.log('men qilganim');
+
+        // const data = [[1, 2, 3], 'qizil', [4, 5, 6], true, false];
+        // let newData = [];
+        // let ponish = [];
+
+        // data.forEach((index, lang) => {
+        //     if(typeof index == "object") {
+        //         let i = index[0];
+        //         let c = index[1];
+        //         let a = index[2];
+        //         ponish.push(i, c, a);
+        //     }
+        // });
+
+        // console.log(ponish);
+
+        // console.log('');
+        // console.log('videoda qilingani');
+        // // videoda qilingani 
+
+        // data.forEach(item => {
+        //     const res = Array.isArray(item);
+        //     if(res) {
+        //         item.forEach(num => {
+        //             newData.push(num);
+        //         })
+        //     }
+        // });
+
+        // console.log(newData);
+        
+
+        // // mashq_3
+        // // men qilganim
+
+        // console.log('');
+        // console.log('mashq_2');
+        // console.log('men qilganim');
+
+        // const checkData = [null, 'false', 0, 99, false, undefined, '', NaN, '0'];
+        // const newCheckData = [];
+
+
+        // checkData.forEach((i, lang) => {
+        //     if (typeof i == "object" || typeof i == "boolean" || typeof i == "undefined" || i === '' || i === 0) { // NaN yoq
+        //         newCheckData.push(i);
+        //     }
+        // });
+
+        // console.log(newCheckData);
+        
+        // const oldCheckData = [];
+
+        // checkData.forEach((i, lang) => {
+        //     if (! i) {
+        //         oldCheckData.push(i);
+        //     }
+        // });
+
+        // console.log(oldCheckData);
+
+        // mashq_4 
+
+        // let soz = prompt();
+        // let box = soz.split('');
+        // let newWord = '';
+        
+        // let world = soz.split('').reverse();
+
+        // for (let i = 0; i < world.length; i++) {
+        //     newWord += world[i];
+        // }
+
+        // world.forEach(i => {
+        //     newWord += i;
+        // });
+
+        // console.log(newWord);
+
+        // for (let i = soz.length - 1; i >= 0;  i--) {
+        //     newWord += box[i];
+        // }
+
+        // console.log(newWord);
+
+
+        // mashq_5 
+
+        // let text = prompt();
+        // const wordSplit = text.split(' ');
+        // let popI = '';
+
+
+        // wordSplit.forEach(i => {
+           
+        //     let iTop = i.charAt().toLocaleLowerCase();
+        //     let iLast = i.slice(1.6).toUpperCase();
+        //     const iMax = iTop + iLast;
+
+        //     popI += ' ' + (iMax);
+           
+        // });
+
+        // console.log(popI.trimStart());
+
+        //    console.log(wordSplit);
+
+        // mashq_6
+
+        // const numbers = [-1, 87, 4, 3.1, -5.5, Infinity,  0, 1, 2, 0.9];
+        // let newNumbers = 0;
+
+        // numbers.forEach(i => {
+        //     if((i >= 0.0) && (Math.floor(i) == i) && i !== Infinity && i !== 0) {
+        //         console.log(i);
+        //         newNumbers += i;
+        //     }
+        // });
+
+        // console.log('');
+        // console.log(newNumbers);
+
+        // mashq_7
+        // men qilganim menikida katta "A" hisobga olinmagan error
+
+        // const text = "Qalaysiz yaxshimisiz ? Yaxshimi ishlar aaaaaaaaaaaaaaaaaaaaaa A ?";
+        // const textWord = text.split('');
+        // let newText = [];
+
+        // textWord.forEach((i, lang) => {
+        //     if(i === 'a') {
+        //         newText.push(i);
+        //     };
+        // });
+
+        // console.log(`bu sozda suncha 'a' harifi bor %c ${newText.length}`, `color: red; font-size: 20px;`);
+
+        // videoda qilingan
+
+        // const word = "Qalaysiz yaxshimisiz ? Yaxshimi ishlar aaaaaaaaaaaaaaaaaaaaaa A ?";
+        // const oldWord = word.split('');
+        // let wordNew = 0;
+
+        // oldWord.forEach((i, lang) => {
+        //     if(i == 'a' || i == "A") {
+        //         wordNew++;
+        //     };
+        // });
+
+        // console.log(` bu sozda suncha 'a' harifi bor ${wordNew}`);
+
+        // mashq_8
+        // men qilganim
+
+        // const types = [21.1, 'Roziya', 'Array', ["I am array"], null, true, 214];
+        // let arrayTypes = [];
+
+        // types.forEach(i => {
+        //     if(typeof i === "number" || typeof i === "string" || typeof i === "object" || typeof i == "boolean") {
+        //         arrayTypes.push(typeof i);
+        //     };
+        // });
+
+        // console.log(arrayTypes);
+
+        // // videoda qilingani
+
+        // let newType = [];
+
+        // types.forEach((type) => {
+        //     newType.push(typeof type);
+        // });
+
+        // console.log(newType);
+
+        // mashq_9
+
+        // const wordType = 'Uzbekistan';  
+        // console.log(wordType.lastIndexOf(wordType.slice(-1)) + 1); // 10
+
+        // mashq_10
+        // men qilganim
+
+        // const numbers = [1, 2, 3, 4, 5];
+        // let a = [];
+
+        // numbers.forEach((i, lang) => {
+        //     a.push(i + lang);
+        // });
+
+        // console.log(a);
+
+        // mashq_11 
+
+        // let a = 0;
+        // let b = 0;
+        // let c = 0;
+
+        // let i = 0;
+
+        // while(i <= 10) {
+        //     i++;
+        //     c += i;
+        //     // c += i.toFixed();
+        // }
+
+        // for(let i = 1; i <= 6; i++) {
+        //     // console.log(i);
+        //     a += i;
+        // };
+
+        // for(let i = 1; i <= 10; i++) {
+        //     // console.log(i);
+        //     b += i;
+        // };
+
+        // for(let i = 1; i <= 28; i++) {
+        //     // console.log(i);
+        //     c += i;
+        // };
+
+        // console.log(a);
+        // console.log(b);
+        // console.log(c);
+
+        // mashq_12
+
+        // let n = 7;
+
+        // for(let i = 1; i < 10; i++) {
+        //     let result = n * i + 1;
+        //     console.log(result);
+        // }
+
+        // console.log((10 * 7) + 1);
+
+        // mashq_13
+        // let array = [1, 2, 3, 4, 5];
+        // let result = [];
+
+        // const reverseFun = (arr) => {
+        //     arr.forEach(i => {
+        //         result.push(i * -1);
+        //     });
+        // };
+
+        // reverseFun(array);
+
+        // console.log(result);
+
+        // mashq_14 
+
+        // const result = [];
+
+        // const fizzBuzz = function(number) {
+        //     for(let i = 1; i <= number; i++) {
+        //         if(i % 3 == 0 && i % 5 == 0) {
+        //             result.push('FizzBuzz');
+        //         } else if(i % 5 == 0) {
+        //             result.push('Buzz');
+        //         } else if(i % 3 == 0) {
+        //             result.push('Fizz');
+        //         } else {
+        //             result.push(i);
+        //         }
+        //     }
+        // }
+        // fizzBuzz(90);
+
+        // console.log(result);
+
+        // mashq_15
+
+        // const about = prompt('siz ning izmingiz nima');
+
+        // const nameObject = {
+        //     result: [
+        //         {name: 'Behruz'},
+        //         {subName: 'Madaminov'},
+        //         {age: 17},
+        //         {contion: 'Surxondaryo'},
+        //         {job: 'web dasturlovchi'},
+        //     ],
+
+        //     resultFun: function(i, lang) {
+        //         for(let a = 0; a < i.length; a++){
+        //             if (about === 'Behruz' || about === 'behruz') {
+        //                 console.log(i[a]);  
+        //             } else {
+        //                 console.log('sizning malumotlaringiz bizning serverda');
+        //             }
+        //         }
+        //     },
+        // };
+
+        // nameObject.resultFun(nameObject.result);
+
+        // const behruzObject = {
+        //     name: 'Behruz',
+        //     lastName: 'Madaminov',
+        //     age: 17,
+        //     region: 'Surxondaryo',
+        //     job: 'Programer',
+        //     haqida: function() {
+        //         return `
+        //             Assalomu aleykum mening ismim ${this.name}, Familyam ${this.lastName}, Yoshim ${this.age}, Mening yashashjoyim ${this.region},  mening ishim ${this.job} 
+        //         `;
+        //     },
+        // };
+
+    </script>
+
+</body>
+</html>

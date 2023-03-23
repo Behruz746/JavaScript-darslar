@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functiion tahlili</title>
+</head>
+<body>
+    
+    <script>
+
+        // function declotion
+
+        // function getAge(year = prompt('tugulgan yilingiz'), name = prompt('ismingiz')) {
+        //     let age = 2022 - year;
+        //     console.log(`${name} siz ${age} yoshingiz`);
+        //     return age;
+        // }
+
+        // const nameAge = getAge();
+
+        // function exprans
+
+        // const getName = function(name = prompt(), age = prompt()) {
+        //     let newAge = 2022 - age;
+        //     console.log(` ${name} siz ${newAge} yoshingiz`);
+        //     return newAge;
+        // }
+
+        // const getNew = getName();
+
+        // Arrow function 
+
+        // tahlil buyerda birinchi function kalit sozini yozamiz
+
+        const ArrowFun = (age = prompt(), name = prompt()) => {
+            let oldAge = 2022 - age;
+            console.log(`${name} siz ${oldAge} yoshingiz`);
+            return oldAge;
+        }
+
+        const getOld = ArrowFun();
+
+    </script>
+
+</body>
+</html>

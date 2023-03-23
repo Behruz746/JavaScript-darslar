@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amaliyot 02</title>
+</head>
+<body>
+
+    <style>
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 90vh;
+            font-family: 'Poppins', sans-serif;
+            background-color: rgb(44, 48, 82);
+            overflow-x: hidden;
+        }
+
+        .block {
+            max-width: 700px;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .block__text {
+            margin: 20px auto;
+        }
+
+        .block__text input {
+            padding: 10px 15px 10px 5px;
+            font-size: 15px;
+        }
+
+        table {
+            width: 500px;
+            background-color: #f1f1f1;
+            backdrop-filter: blur(20px);
+            margin: 0 auto;
+        }
+        
+        td {
+            width: 300px;
+            height: 100%;
+            border: 1px solid rgb(0, 0, 0);
+        }
+
+        th {
+            width: 100px;
+            height: 100%;
+            border: 1px solid rgb(0, 0, 0);
+        }
+
+    </style>
+
+    <div class="block">
+
+        <table>
+
+            <tr>
+                <th>name:</th>
+                <td class="name">your name</td>
+            </tr>
+
+            <tr>
+                <th>age:</th>
+                <td class="age">0</td>
+            </tr>
+
+            <tr>
+                <th>year:</th>
+                <td class="year">0</td>
+            </tr>
+
+            <tr>
+                <th>moon:</th>
+                <td class="moon">0</td>
+            </tr>
+
+            <tr>
+                <th>week:</th>
+                <td class="week">0</td>
+            </tr>
+
+            <tr>
+                <th>day:</th>
+                <td class="day">0</td>
+            </tr>
+
+            <tr>
+                <th>hour:</th>
+                <td class="hour">0</td>
+            </tr>
+
+            <tr>
+                <th>minute:</th>
+                <td class="minute">0</td>
+            </tr>
+
+            <tr>
+                <th>second:</th>
+                <td class="second">0</td>
+            </tr>
+    
+        </table>
+
+        <div class="block__text">
+            <form action="#">
+                <input class="inputName" type="text" placeholder="name">
+                <input class="inputAge" type="text" placeholder="age">
+            </form>
+        </div>
+
+    </div>
+    
+    <script>
+
+        const oldYear = 2022;
+
+        function getNA() {  
+
+            const tegName = document.querySelector('.inputName');
+            const tegAge = document.querySelector('.inputAge');
+
+            function getName() {
+                const name = document.querySelector('.name');
+
+                let nameZero = tegName.value.charAt();
+                let nameBig = nameZero.toUpperCase();
+                let nameLast = tegName.value.slice(1);
+                let nameNotBig = nameLast.toLowerCase();
+
+                const max = nameBig + nameNotBig;   
+                name.innerHTML = `<td id=name> ${max} </h1> <td>`;
+            }
+
+            tegName.addEventListener('keydown', getName);
+            tegName.addEventListener('keyup', getName);
+
+            
+            function getAge() {
+
+                const age = document.querySelector('.age');
+                const year = document.querySelector('.year');
+                const moon = document.querySelector('.moon');
+                const week = document.querySelector('.week');
+                const day = document.querySelector('.day');
+                const hour = document.querySelector('.hour');
+                const minute = document.querySelector('.minute');
+                const second = document.querySelector('.second');
+
+                const tegZero = tegAge.value;
+                let ageYil = oldYear - tegZero;
+                let ageOy = tegAge.value * 12;
+                let ageHafta = ((tegAge.value * 365) / 7).toFixed(0);
+                let ageKun = tegAge.value * 365;
+                let ageSoat = tegAge.value * 365 * 24;
+                let ageMinut = ageSoat * 60;
+                let ageSecunt = ageMinut * 60;
+
+                    if (tegAge.value > 0) {
+                        age.innerHTML = `<td class='age'>${tegAge.value}<td>`;
+                    } else {
+                        age.innerHTML = `<td class='age'> ${tegAge.value - 0} <td>`;  
+                    }
+
+                    if (ageYil < 1000000) {
+                        year.innerHTML = `<td class='age'>${ageYil}<td>`;
+                    } else {
+                        year.innerHTML = `<td class='age'> 0 <td>`;
+                    } 
+
+                    moon.innerHTML = `<td class='age'>${ageOy}<td>`;
+                    week.innerHTML = `<td class='age'>${ageHafta}<td>`; 
+                    day.innerHTML = `<td class='age'>${ageKun}<td>`; 
+                    hour.innerHTML = `<td class='age'>${ageSoat}<td>`; 
+                    minute.innerHTML = `<td class='age'>${ageMinut}<td>`; 
+                    second.innerHTML = `<td class='age'>${ageSecunt}<td>`; 
+            }
+
+            tegAge.addEventListener('keydown', getAge);
+            tegAge.addEventListener('keyup', getAge);
+
+        }
+
+        getNA();
+
+
+        const ism = prompt();
+
+        const ismlar = ['Ahror', 'Sardor', 'Behruz'];
+
+        if(ismlar.includes(ism)) {
+            alert(`ha ${ism} bor`);
+        } else {
+            alert(`afsus ${ism} yoq`);
+        }
+
+       
+        const names = ['Ahror', 'Sardor', 'Behruz', 'Bilol'];
+
+        for(let i = 0; i < names.length; i++) {
+            console.log(names[i] + 'bek');  
+        }
+
+
+        let i = -1;
+
+        while(i < names.length) {
+            i++
+            console.log(names[i] + 'bek');
+        }
+
+        const viloyatNomi = prompt('Qaysi viloyat kerak');
+
+        let viloyatTop = viloyatNomi.charAt();
+        let viloyatLast = viloyatTop.toUpperCase();
+        let viloyatSlick = viloyatNomi.slice(1);
+        let viloyatNotTop = viloyatSlick.toLocaleLowerCase();
+
+        viloyatMax = viloyatLast + viloyatNotTop;
+
+        switch(viloyatMax) {
+
+            case "Farg'ona":
+                 console.log('Fargona aholisi 3 878 034 kishi');
+                break
+
+            case "Surxondaryo":
+                 console.log('Surxandaryo aholisi  2 726 086 kishi');
+                break
+
+            case "Toshkent":
+                 console.log('Toshkent aholisi  2 840 830 kishi');
+                break
+
+            default: 
+                console.log('siz viloyat nomini natogri yozdingiz');
+
+        }
+
+        const number = 20;
+
+        const soz = prompt("20 ta so'z kiriting: ");
+
+        let boxValue = soz;
+
+        if(+soz.length < number) {
+            console.log(`'${soz}'' ${soz.length} ta`);
+        } else {
+            console.log(`soz 20 ta dan ortiq'${soz}' ${soz.length} ta `);
+        }
+                                                    
+    </script>
+                                    
+</body>
+</html>

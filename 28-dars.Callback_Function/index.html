@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback Function</title>
+</head>
+<body>
+    
+    <script>
+
+        // buyerda biz birinchi saqlovchi yozyapiz 'number' undan kegin arrow function yaratib uni nimoni 'myFunc' deb yozyapiz va functionga 'callBack' degan function 
+        // saqlovchisini yozdik undan kegin u saqlovchiga birinchi yozgan 'number'ni tenglashtirdik kegin esa functionni chaqirish uchun function ni nomini yozdik pasidan 
+        // va function saylovchisiga function yozdik yani 'callBack'ga uni ichidagi functionga ham saqlovchi yozdik 'a' ammo u saqlovchini ichiga value bermaymiz chuni uni ichida 
+        // value bor yani 'number'ning 50 valuesi u buyerga qanday kelib qolyapti !? buyerda 'callBack'ga function berilganida u ning valuesi yani 50 'number'.  'callBack'ning
+        // functionni dagi a saqlovchiga otyapti 
+
+        // let number = 50;
+
+        // const myFunc = callBack => callBack(number);
+
+        // myFunc(function(a, b) {
+        //     console.log(a, b);
+        // });
+
+           // _________________________________________________________________________Amaliyot__________________________________________________________________________//
+        
+        function getFunc(newProfil) {
+            let age = prompt('yoshingizni kiriting');
+            let name = prompt('ismingizni kiriting');
+
+            newProfil(name, age);
+        }
+
+        getFunc(function(a, b) {
+            
+            if(b >= 20 || b == 17) {
+                console.log(`salom ${a + ' aka'} yoshingiz ${+b}`);
+
+            } else {
+                console.log(`salom ${a + ' uka'} yoshing ${+b}`);
+
+            }
+        });
+
+    </script>
+
+</body>
+</html>

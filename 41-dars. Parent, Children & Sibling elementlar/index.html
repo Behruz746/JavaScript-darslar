@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Parent, Children & Sibling elementlar </title>
+
+    <style>
+
+        .children {
+            padding: 10px;
+            border: 1px solid #d00;
+            
+        }
+
+    </style>
+
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif;">
+
+    <h1> Parent, Children & Sibling elementlar </h1>
+
+    <article>
+        <p>previousElementSibling</p>
+        <h2>article title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, beatae?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, beatae?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, beatae?</p>
+        <div>Lorem, ipsum dolor. by Behruz</div>
+    </article>
+    
+    <script>
+
+        // 01 // children bu tegning ichidagi teglarni korsatadi 
+
+        // const article = document.querySelector('article');
+        // console.log(article.children); // children bu tegning ichidagi teglarni korsatadi 
+
+        // Array.from(article.children).forEach( i => {
+        //     i.classList.add('children');
+        // });
+
+        // 02 // parentElement tegning otasini korsatadi  
+        // agar biz teg nomiga ikki marta 'parentElement' bersak osha berilgan tegning otasini otasini korsatadi 
+
+        const title = document.querySelector('h2');
+        // console.log(title.parentElement); 
+        // console.log(title.parentElement.parentElement);
+
+        // 03 // nextElementSibling tegdan kegingi kelayotgan tegni korsatadi
+        // console.log(title.nextElementSibling);
+
+        // 04 // previousElementSibling esa teg dan avalgi tegni korsatadi 
+        // console.log(title.previousElementSibling);
+ 
+        // bu yerda biz 'title' dan keyingi tegni 'nextElementSibling' bilan olyapmiz va osh tegning otasini esa 'parentElement' bilan va osha tegning otasini bolasini olish uchun esa 
+        // biz 'children' deb yozdik
+        // console.log(title.nextElementSibling.parentElement.children);
+
+    </script>
+
+</body>
+</html>

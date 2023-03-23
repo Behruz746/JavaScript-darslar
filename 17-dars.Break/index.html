@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break & continue</title>
+</head>
+<body>
+
+    <script>
+
+        // const nubers = [30, 0, 20, 50, 10, 60, 40];
+
+        // for (let i = 0; i < nubers.length; i++) {
+        //     console.log('sizning natijangiz', nubers[i]);
+
+        //     if (nubers[i] === 20) {
+        //         continue
+        //     }
+
+        //     if (nubers[i] === 60) {
+        //         console.log('siz yutingiz');
+        //         break
+        //     }
+        // }
+
+
+        const nubers = [
+            10,
+            60,
+            20,
+            0,
+            30,
+            40,
+            50
+        ];
+
+        for(let i = 0; i < nubers.length; i++) {
+            
+            if(nubers[i] === 0) {
+                console.log('000');
+            continue
+            }
+             
+            console.log('sizning natijanigiz', nubers[i]);
+
+            if(nubers[i] === 60) {
+                console.log('siz eng yuqori natijani topladiz');
+            break
+            }
+
+        }
+
+    </script>
+
+</body>
+</html>

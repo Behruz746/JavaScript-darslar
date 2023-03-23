@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+<body>
+    
+    <script>
+
+        // function 3 turi bor 
+
+        // function Decloration
+        // function Expression
+        // arrow Function
+
+
+        // function Decloration
+        // bu function decloration birinchi function kalit soz undan kegin functionning nomi kelyapti va gulik qavus ochib gulik qavusni ichiga qanday function bolishini yozamiz
+        // va songisi bu functioni chaqirish uni ismini gulik ni tagiga yozish kerak 
+        // agar function ni yaratib ammo ohiriga uni chaqiruvchi nomini yozmasak function ishlamaydi
+        // function declationni bir ustun jihati bor functionni chaqiruvchi nomini functiondan avval ham qoysak boladi
+
+        function sayHello() {
+            console.log('Hello function Decloration');
+        }
+
+        sayHello();
+
+
+        // function Expression
+        // bu esa function Expression buyerda biz ozgaruvchi hosil qilish kerak const yoki let farqi yoq ozgaruvchiga nom beramiz va function kalit sozini yozamiz 
+        // undan kegin function saqlovchi lari uchun qavus ochib undan kegin gulik qavus ochib ichiga qanday function bolishini yozamaiz 
+        // buda esa function ni chaqiruvchi nomini functiondan tepada chaqirib bolmadi chaqirsa function ishlamaydi
+        // bunga sabab TDZ yani vaqtinchalik olik zona saqlovchilarda TDZ nani ozgaruvchidan oldin unichaqirib bolmaydi js buni oqiy olmaydi 
+
+        const getFunction = function() {
+            console.log('Hello function Expression');
+        }
+
+        getFunction();
+
+        // arrow Function
+        // buyerda ham saqlovchi boshida yozamiz let yo const farqi yoq undan kegin saqlovchini nomi va buyerda functionni nalit sozni yozmaymiz 
+        // buyerda faqat qavus undan kegin  functionni belgisi ' => ' bu hudi function tegan manoni bildiradi va gulik qavus ochib uni ichida boladigan functionlarni yozamiz 
+        // buyeda ham faqat functionni chaqirish uchun faqat functioni pasiga yozamiz functionni tepasiga yozib bolmaydi chunki TDZ boladi hudi ' function Expression ' dagidek 
+
+        const getArrow = () => {
+            console.log('Hello arrow Function');
+        }
+
+        getArrow();
+
+    </script>
+
+</body>
+</html>

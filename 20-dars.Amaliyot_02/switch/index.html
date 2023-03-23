@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    amaliy ish #4
+
+   <ul>
+        <li><input type="radio" class="A"></li>
+        <li><input type="radio" class="B"></li>
+   </ul>
+
+    <script>
+
+        const viloyatNomi = prompt('Qaysi viloyat kerak');
+
+        let viloyatTop = viloyatNomi.charAt();
+        let viloyatLast = viloyatTop.toUpperCase();
+        let viloyatSlick = viloyatNomi.slice(1);
+        let viloyatNotTop = viloyatSlick.toLocaleLowerCase();
+
+        viloyatMax = viloyatLast + viloyatNotTop;
+
+        switch(viloyatMax) {
+
+            case "Farg'ona":
+                 console.log('Fargona aholisi 3 878 034 kishi');
+                break
+
+            case "Surxondaryo":
+                 console.log('Surxandaryo aholisi  2 726 086 kishi');
+                break
+
+            case "Toshkent":
+                 console.log('Toshkent aholisi  2 840 830 kishi');
+                break
+
+            default: 
+                console.log('siz viloyat nomini natogri yozdingiz');
+
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  font-family: "Prompt", sans-serif;
+  margin: 0;
+  background-color: #fafafa;
+  font-size: 14px;
+  padding: 70px 30px;
+}
+
+.onboarding {
+  position: relative;
+  max-width: 1000px;
+  width: 100%;
+  max-height: 740px;
+  height: 100%;
+}
+.onboarding .button {
+  position: absolute;
+  height: 40px;
+  line-height: 40px;
+  background-color: #f1f1f1;
+  border-radius: 2px;
+  border: 0;
+  margin: 0;
+  padding: 0 12px;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.onboarding .button:hover {
+  background-color: #e8e8e8;
+}
+.onboarding .button:active {
+  margin-top: 1px;
+}
+.onboarding .onboarding__item {
+  border-radius: 4px;
+}
+.onboarding .onboarding__item--top {
+  position: absolute;
+  width: 300px;
+  height: 100px;
+  background-color: #26de81;
+  top: 0;
+  left: 0;
+}
+.onboarding .onboarding__item--left {
+  position: absolute;
+  height: 200px;
+  width: 100px;
+  background-color: #4b7bec;
+  left: 20px;
+  bottom: -20px;
+}
+.onboarding .onboarding__item--right {
+  position: absolute;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  top: 50%;
+  right: 20%;
+  background-color: #fc5c65;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  opacity: 0.7;
+  z-index: 1;
+  transition: opacity 0.1s;
+}
+
+.hide {
+  z-index: -100;
+  opacity: 0;
+}
+
+@media screen and (max-width: 645px) {
+  .onboarding__item--left {
+    height: 230px;
+    left: 0;
+    bottom: 0;
+  }
+  .onboarding__item--right {
+    right: 0;
+    top: unset;
+    bottom: 30px;
+    width: 150px;
+    height: 150px;
+  }
+}/*# sourceMappingURL=style.css.map */

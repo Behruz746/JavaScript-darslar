@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Array</title>
+</head>
+<body>
+    
+    <script>
+
+        const user = {
+            name: 'Behruz',
+            userName: 'Madaminov',
+            age: 16,
+            lang: ['Uzbek', 'Russian', 'English'],
+            email: 'madaminovbehruz@997',
+            location: 'Surxondaryo',
+
+            movies: [
+                {name: 'Avatar', likes: 456},
+                {name: 'Harry Potter', likes: 484},
+                {name: 'Titanik', likes: 987},
+                {name: 'Sitve Jobs', likes: 156},
+                {name: 'Sherlock', likes: 574},
+            ],
+
+            a: function() {
+                this.movies.forEach((i) => {
+                    let max = `kino nomi:🎥 ${i.name} kino lakes:❤ ${i.likes}`;
+                    console.log(max);
+                });
+            },
+        };
+
+        user.a();
+
+
+        // const movies = [
+        //     {name: 'Avatar', likes: 456},
+        //     {name: 'Harry Potter', likes: 484},
+        //     {name: 'Titanik', likes: 987},
+        //     {name: 'Sitve Jobs', likes: 156},
+        //     {name: 'Sherlock', likes: 574},
+        // ];
+
+        // movies.forEach((movie) => {
+        //     const result = `Kino nomi: ${movie.name} 🎞 like: ${movie.likes}`;
+        //     console.log(result);
+        // });
+
+    </script>
+
+</body>
+</html>

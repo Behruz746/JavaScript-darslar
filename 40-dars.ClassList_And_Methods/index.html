@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassList</title>
+
+    <style>
+
+        .error {
+            padding: 10px;
+            color: #fff;
+            background-color: #d00;
+        }
+
+        .success {
+            padding: 10px;
+            color: limegreen;
+            border: 1px solid limegreen;
+        }
+
+        .rodd {
+            padding: 10px;
+            background: red;
+        }
+
+    </style>
+
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif">
+
+    <div class="box">
+        <h3>hello world</h3>
+        <h2>salom dunyo</h2>
+    </div>
+
+    <h1>add & remove class</h1>
+
+    <p>Lorem, ipsum error dolor.</p>
+    <p>Lorem, ipsum success dolor.</p>
+    <p>Lorem, ipsum none dolor.</p>
+    <p>Lorem, ipsum success dolor.</p>
+    <p>Lorem, ipsum error dolor.</p>
+    <p>Lorem, ipsum error dolor.</p>
+    <p>Lorem, ipsum success dolor.</p>
+    
+    <script>
+
+        const textP = document.querySelectorAll('p');
+
+        textP.forEach(i => {
+            if(i.textContent.includes('error')) {
+                i.classList.add('error');
+            } else if(i.textContent.includes('success')) {
+                i.classList.add('success');
+            }
+        });
+
+    </script>
+
+</body>
+</html>

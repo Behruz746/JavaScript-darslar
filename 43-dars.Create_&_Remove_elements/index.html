@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remov elements</title>
+
+    <style>
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
+        h1 {
+            font-size: 40px;
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ul li {
+            display: flex;
+            align-items: center;
+            width: 300px;
+            height: 40px;
+            margin-top: 10px;
+            padding-left: 10px;
+            background-color: #9E58A7;
+            color: #fff;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 8px;
+            border: none;
+            background-color: #404AE3;
+            color: #fff;
+        }
+
+    </style>
+
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif;"> 
+
+    <div>
+        <h1>Todos</h1>
+
+    <ul>
+        <li>By milk 🥛</li>
+        <li>Read a book </li>
+        <li>Play the guitar</li>
+        <li>Play the bills</li>
+    </ul>
+
+    <button>CLICK ME</button>
+    </div>
+    
+    <script>
+
+        const ul = document.querySelector('ul');
+
+        // remove qaysi teglarga qolanilsa uni yoq qiladi
+        // ul.remove();
+
+        const button = document.querySelector('button');
+        const items = document.querySelectorAll('li');
+
+        button.addEventListener('click', () => {
+            // ul.innerHTML += `<li> something new text  🤣</li>`;
+
+            // js da element yaratish 
+            // buyerda biz biringchi const li bilan saqlovchi yaratib olyapiz va document da yoz yappiz va createElement('li'); deb ichiga qanday element yaratishli yozyapiz 
+            // buyerda 'li' element ti yozilgan undan kegin lini ichiga text qoshyapiz textContent bilan 
+            // va ul elementtiga lini teglayapmiz ul ichida endi li tegi bor 
+            // qosilgan li elementti avvalgi li larning tagidan paydo boladi 
+            // lekin agar biz osha boshidagi li ni tepasidan paydo qilmoqchi bolsak 'appenChild()'ni orniga 'prepend()' deb yozamiz;
+
+            const li = document.createElement('li');
+            li.textContent = 'something new text';
+            ul.appendChild(li); // pasdan paydo boladi
+            // ul.prepend(li); // tepadan paydo boladi
+
+        });
+
+        items.forEach(i => {
+            i.addEventListener('click', (e)=> {
+                // i.remove();
+                e.target.remove();
+            });
+        });
+
+
+    </script>
+
+</body>
+</html>

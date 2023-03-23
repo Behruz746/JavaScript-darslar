@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+
+        const mehmonlar = ['Behruz', 'Sardor', 'Bilol', 'Jasur', 'Ahmat'];
+        mehmonlar[0] = 'Salohidin'; //   <== buyerda biz array dagi 0 positsiyada turgan 'Behruz' ni olib 'Salohidin' ga o'zgartirdik 
+         // '[0]' bilan index positasini aniqladik va = qoyib ' ' qoshtirnoqa boshqa stringni qoyamiz  
+
+        // console.log(mehmonlar);
+
+        let nubers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 100];
+        console.log(nubers);
+
+        // property 
+
+        let result1 = nubers.length;
+        // console.log(result1);
+
+        // concat bu 2 ta arrayni birbiriga qoshuvchi methot 
+        // misol:
+
+        let result2 = mehmonlar.concat(nubers);
+        // console.log(result2);
+
+        // biz let hosil qiyapiz va let ga nom beryapiz yani 'result' ichiga 'mehmolar' degan 
+        // arrayni ichiga olyapiz va '.concat(nubers)' deb yozyapiz concatni ichiga qoshmoqchi bolgan Array nomini yozmiz bizda
+        //'nubers' diyilgan   
+
+        // push and pop 
+
+        mehmonlar.push('Davlatbek'); //push methotida Arrayning ohurudan berilgan sozni qoshadi push('Behruz');
+        // mehmonlar.pop(''); // pop esa Arraydagi ohiridagi sozni olib tashaydi
+        console.log(mehmonlar);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>54 dars Map array</title>
+</head>
+<body>
+    <script>
+
+        const movies = [
+            {name: 'Avatar 3D', year: 2008, rating: 9},
+            {name: 'Titanik 4D', year: 1997, rating: 7},
+            {name: 'Forsaj 9 3D', year: 2020, rating: 4},
+            {name: 'Avengers', year: 2012, rating: 6},
+        ];
+
+        // Map Method 
+
+        // Map Method ham filterga ohshash tuzuladi
+        // faqat filter methodi bironbir objectdan bironbir malumotni 
+        // ajratib olibberadi
+        // Map Methodi esa bironbir object malumotiga ozgartirish beradi
+
+        // buyerda biz birinchi saqlovchi yozdik yani 'moviesNew' va unga tengladik
+        // 'movies'ni unga esa Map Methodini berdik Mapniichida esa arrow functionni ochitik 
+        // funtion ni ichida 1 ta saqlovchi yozdik yani 'i' ni ichiga 'movies' hamma
+        // malumotlarni tushadi kegin function 'moviesNew' saqlovchisiga saqlash va tashqariga olibchiqish 
+        // uchun return qildik va biz 'i.rating + 1' qilsak bolar edi  ammo buni console ga 
+        // chiqarsak Array qilib beradi 
+        // bizga esa object kerak shuning uchun biz 
+        // {name: i.name, year: i.year, rating: i.rating + 1};
+        // qildik shunday qilsak consolega object bolisb chiqadi
+
+        // agar kodlar birqator bolsa qisqartirsa ham boladi
+
+        const moviesNew = movies.map((i)=> {
+            return {name: i.name, year: i.year, rating: i.rating + 1};
+        });
+
+        console.log(moviesNew);
+        
+    </script>
+</body>
+</html>

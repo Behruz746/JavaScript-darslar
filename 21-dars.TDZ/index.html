@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TDZ</title>
+</head>
+<body>
+    
+    <script>
+
+        // TDZ 'vaqtinchalik olik zona'
+
+        // buyerda olik zona kuzatilyapti chunki saqlovchi bironbir function yoki amal dan kegin kelsa buhato boladi 
+        // buyerda biz console.log(age)  yozyapmiz ammo age degan ozgaruvchi consoledan avval kelmagan undan kegin kelyapti
+        // ozgaruvchidan oldin hechqachon undan avval ozgaruvchini chaqirib bolmaydi
+        // js buni oqiyolmadi
+
+        console.log(age);
+        let age = 16;  
+
+        // const da ham bu narsa birhil ishlaydi 
+
+        console.log(name);
+        const name = 'behruz';
+
+        // lekin var da boshqacha boladi var da 'undefined' boladi js oylaydiki ozgaruvchi bor ammo uni ichida hech narsa yoq
+
+        console.log(surName);
+        var surName = 'Madaminov';
+
+    </script>
+
+</body>
+</html>

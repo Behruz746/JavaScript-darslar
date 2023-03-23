@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+<body>
+    
+    <script>
+
+        const baho = 'A';
+
+        switch (baho) {
+            case 'A': 
+                console.log('sizning bahoingiz A')
+                break
+            case 'B': 
+                console.log('sizning bahoingiz B')
+                break
+            case 'C': 
+                console.log('sizning bahoingiz C')
+                break
+            case 'D':
+                console.log('sizning bahoingiz D')
+                break
+            default:
+                console.log('sizning bahoingiz E')
+            break
+        }
+
+        let day = prompt('Bugungi kuni yozing');
+
+        let dayW = day.replace('w', 'sh').toUpperCase();
+        let dayFrist = dayW.charAt().toUpperCase();
+        let dayLast = dayW.slice(1).toLowerCase();
+        let dayMax = dayFrist + dayLast;
+
+        switch (dayMax) {
+            case 'Dushanba':
+                console.log('bugun Dushanba emas');
+                break
+
+            case 'Seshanba':
+                console.log('bugun Seshanba emas');
+                break
+
+            case 'Chorshanba': 
+                console.log('bugun Chorshanba emas');
+                break
+
+            case 'Payshanba': 
+                console.log('bugun Payshanba emas');
+                break
+
+            case 'Juma': 
+                console.log('ha bugun Juma');
+                break
+
+            case 'Shanba': 
+                console.log('bugun Shanba emas');
+                break
+
+            default: 
+                console.log("siz kunni nato`g`ri yozdingiz javobni to`g`rlang");
+        }
+
+    </script>
+
+</body>
+</html>

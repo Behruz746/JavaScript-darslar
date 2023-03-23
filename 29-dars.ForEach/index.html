@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForEach</title>
+</head>
+<body>
+    
+    <script>
+
+        // buyerda biz birinchi saqlovchi yaritolyappiz yani 'ismlar' u saqlovchini ichida esa ismlardan tashkiltopgan array bor 
+        // kegin biz ikkinchi saqlovchini yaratyapmiz yani 'newIsmlar' uni ichida bosh array bor u bizga 'ismlar' ichidagi arraylarni ozgartilrilganini ollib otishga kerak boladi
+        // kegin biz 'ismlar' dan forEach ochyapmiz forEachni ichidan arrow function ochib function saqlovchisi yarat moqtamiz yani 'ism'
+        // 'ism' ning ichida 'ismlar' ichidagi array larni harbir ismlari 1ta dan joylashadi 
+        // biz finction ni ichida yana bir saqlovchi yarat amiz yani 'newName' uni 'ism'ga tenglashtiramiz va 'ism'ning array larnidan bosh harifini olamiz 'charAt()'
+        // kegin bosh harifni katta qilamiz buning uchin 'toUpperCase()' yozamiz va 'ism' ni '+' 'newName' bilan qoshib 'ism'ning qolgan 2 chi dan ohirgacha hariflarini 
+        // olamiz 'slice(1)' kegin qolgan 2 dan ohirgi harifgacha kichkina qilish uchun 'toLowerCase()'ni ishlatamiz va '+' bilan 'ismlar'ga 'bek' so`zini qo`shamiz 
+        // va bularni bosh arrayga otqizish uchun yani saqlovchisi 'newIsmlar'ga 'push' deb yozib qaysi saqlovchi ni otqazmoqchi bolsaq uni nomini yozish kerak bu yerda esa 
+        // 'newName' saqlovchi nomi va bu ozgarislarni korish uchun forEach dan chiqib uni tashqarisiga 'console.log(newIsmlar)' deb yozamiz 
+        // 'console' ga ' ['Behruzbek', 'Sardorbek', 'Asatbek'] ' deb chiqadi 
+        // forEach fudi forLoop ga ohshagan method faqat forLoop dan ustun jihatlari koproq kegin bu 'ForEach' faqat arraylar uchun ishlatiladi
+
+        //______________________________________ForEach haqida qisqacha shu edi ________________________________//
+
+        // const ismlar = ['behruz', 'sardor', 'asat'];
+        // const newIsmlar = [];
+
+        // ismlar.forEach( ism => {
+        //     const newName = ism.charAt().toUpperCase() + ism.slice(1).toLowerCase() + 'bek';
+        //     newIsmlar.push(newName);
+        // });
+
+        // console.log(newIsmlar);
+
+        //__________Amaliyat________//
+        
+        let sil = prompt('parol');
+        const box = []; 
+        box.push(sil);
+ 
+        box.forEach(fun => {
+            let boxText = prompt('yana birbor'); 
+
+            if(boxText.value >= fun) {
+                console.log(`sizning parolingiz togri`);
+
+            } else {
+                console.error(`sizning parolingiz natogri ${boxText}`);
+
+            }
+        });
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+@keyframes body {
+    0% {
+        background-color: rgb(24, 25, 26);
+    }
+
+    15% {
+        background-color: rgba(24, 25, 26, 0.965);
+    }
+
+    55% {
+        background-color: rgba(24, 25, 26, 0.907);
+    }
+
+    75% {
+        background-color: rgba(24, 25, 26, 0.965);
+    }
+
+    100% {
+        background-color: rgb(24, 25, 26);
+    }
+}
+
+@keyframes newBAll { 
+    0% {
+        transform: translate(0, -150px);
+        background-color: #000;
+    }
+
+    25% {
+        transform: translate(0, 650px);
+        background-color: #000;
+    }
+
+    55% {
+        transform: translate(0, 650px);
+        background-color: #000;
+    }
+
+    75% {
+        transform: translate(0, 650px);
+        background-color: rgba(0, 0, 0, 0);
+        color: transparent;
+    }
+
+    80% {
+        transform: translate(0, -150px);
+        background-color: transparent;
+        color: transparent;
+    }
+
+    100% {
+        transform: translate(0, -150px);
+        background-color: rgba(0, 0, 0, 0);
+        color: transparent;
+    }
+}
+
+@keyframes newBAll1 { 
+    0% {
+        transform: translate(0, -150px);
+        background-color: #000;
+    }
+
+    25% {
+        transform: translate(0, 650px);
+        background-color: #000;
+    }
+
+    55% {
+        transform: translate(0, 650px);
+        background-color: #000;
+    }
+
+    75% {
+        transform: translate(0, 650px);
+        background-color: rgba(0, 0, 0, 0);
+        color: transparent;
+    }
+
+    80% {
+        transform: translate(0, -150px);
+        background-color: transparent;
+        color: transparent;
+    }
+
+    100% {
+        transform: translate(0, -150px);
+        background-color: rgba(0, 0, 0, 0);
+        color: transparent;
+    }
+}
+
+@keyframes newBAll2 { 
+    0% {
+        transform: translate(0, -150px);
+        background-color: #000;
+    }
+
+    25% {
+        transform: translate(0, 650px);
+        background-color: #000;
+    }
+
+    55% {
+        transform: translate(0, 650px);
+        background-color: #000;
+    }
+
+    75% {
+        transform: translate(0, 650px);
+        background-color: rgba(0, 0, 0, 0);
+        color: transparent;
+    }
+
+    80% {
+        transform: translate(0, -150px);
+        background-color: transparent;
+        color: transparent;
+    }
+
+    100% {
+        transform: translate(0, -150px);
+        background-color: rgba(0, 0, 0, 0);
+        color: transparent;
+    }
+}
+
+@keyframes newBAll3 { 
+    0% {
+        transform: translate(0, -150px);
+        background-color: #000;
+    }
+
+    25% {
+        transform: translate(0, 650px);
+        background-color: #000;
+    }
+
+    55% {
+        transform: translate(0, 650px);
+        background-color: #000;
+    }
+
+    75% {
+        transform: translate(0, 650px);
+        background-color: rgba(0, 0, 0, 0);
+        color: transparent;
+    }
+
+    80% {
+        transform: translate(0, -150px);
+        background-color: transparent;
+        color: transparent;
+    }
+
+    100% {
+        transform: translate(0, -150px);
+        background-color: rgba(0, 0, 0, 0);
+        color: transparent;
+    }
+}

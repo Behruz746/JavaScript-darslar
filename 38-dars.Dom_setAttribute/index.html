@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom setAttribute & getAttribute</title>
+</head>
+<body>
+
+    <h3>setAttribute & getAttribute</h3>
+
+    <a href="https://www.google.com">Go to google Main Page</a>
+
+    <p class="error">Lorem, ipsum.</p>
+    
+    <script>
+
+       const leng = document.querySelector('a');
+
+        // getAttribute bu tegning ichidagi atributlarni korishga ishlatiladi 
+        // misol: leng dagi saqlovchida console.log(leng.getAttribute('href'));
+        // qilingan getAttribute dan kegin qavus ichida qanday malumot kormoqchi bolsangiz oshani yozzasiz 
+        // bu yerda 'href' yani tegning link ki
+
+       console.log(leng.getAttribute('href')); 
+
+       // setAttribute esa teglarning attributlarini ozgartradi
+       // misol uchun leng birinchi saqlovchi nomi 'leng' va 'setAttribute'
+       // uni ichida esa birinchi qaysi attributeni ozgartirmoqchi bolsangiz 
+       // oshani nomini yozasiz buyerda 'href' 
+       // va osha attrinuteni qaysi malumotga ozgartirmoqchisiz shuni yozish kerak 
+       // buyerda esa 'https://www.yandex.ru' ga ozgartrilgan
+
+       leng.setAttribute('href', 'https://www.yandex.ru');
+       console.log(leng.getAttribute('href')); 
+       leng.textContent = 'Go to yandex Main Page';
+
+       const tegName = document.querySelector('.error');
+       console.log(tegName.getAttribute('class'));
+
+       tegName.setAttribute('class', 'sucction');
+       console.log(tegName.getAttribute('class'));
+
+       tegName.setAttribute('style', 'font-family: Arial, sans-serif');
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click event'i </title>
+
+    <style>
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
+        h1 {
+            font-size: 40px;
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ul li {
+            display: flex;
+            align-items: center;
+            width: 300px;
+            height: 40px;
+            margin-top: 10px;
+            padding-left: 10px;
+            background-color: #9E58A7;
+            color: #fff;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 8px;
+            border: none;
+            background-color: #404AE3;
+            color: #fff;
+        }
+
+    </style>
+
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif;">
+
+    <div>
+        <h1>Todos</h1>
+
+    <ul>
+        <li>By milk</li>
+        <li>Read a book</li>
+        <li>Play the guitar</li>
+        <li>Play the bills</li>
+    </ul>
+
+    <button>CLICK ME</button>
+    </div>
+    
+    
+    <script>
+
+        const button = document.querySelector('button');
+        const listItem = document.querySelectorAll('li');
+
+        button.addEventListener('click', () => {
+            listItem.forEach(i => {
+                i.style.textDecoration = 'none';
+                i.style.opacity = '1';
+            });
+        });
+
+        listItem.forEach(i => {
+            i.addEventListener('click', (e) => {
+                e.target.style.textDecoration = 'line-through';
+                e.target.style.opacity = '0.8';
+            });
+        });
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom in InnerHTML and TextContent</title>
+</head>
+<body style="font-family: Arial, sans-serif;">
+
+    <div class="container">
+        <h1 id="title">DOM-selectors</h1>
+
+        <ul>
+            <li class="list-item">HTMl</li>
+            <li class="list-item">CSS</li>
+            <li class="list-item">JavaScript</li>
+        </ul>
+
+        <ol class="people-list"></ol>
+
+        <ul class="file_name"></ul>
+
+        <button id="click-btn">ADD NEW</button>
+    </div>
+    
+    <script>
+
+        const fileName = document.querySelector('.file_name');
+
+        let nameText = prompt('ismingizni va familiyangizni yozing !');
+        let nameText2 = prompt('yoshimgizni yozing !');
+        let nameText3 = prompt('ishimgiz yozing !');
+
+        const nameArray = [nameText, nameText2, nameText3];
+
+        console.log(nameArray);
+
+        nameArray.forEach(i => {
+            fileName.innerHTML += `<li>${i}</li>`;
+        });
+        
+        
+
+        // textContent
+
+        // const title = document.getElementById('title');
+        // // title.textContent = ' new Text';
+        // console.log(title.textContent += ' New Text');
+
+        // const listItem = document.querySelectorAll('.list-item');
+        // console.log(listItem);
+
+        // listItem.forEach(i => {
+        //     i.textContent += ' darslari';
+        // });
+
+        // for(let i = 0; i < listItem.length; i++) {
+        //     listItem[i].textContent += ' darslari';
+        // }
+
+        // innerHTML 
+
+        // const title = document.getElementById('title');
+        // title.innerHTML = ` <i> TEXT NEW </i>`;
+
+        // const newOl = document.querySelector('.people-list');
+
+        // const names = ['Behruz', 'Sardor', 'Doniyor'];
+
+        // names.forEach(i => {
+        //     newOl.innerHTML += `<li>${i }</li>`;
+        // });
+        
+
+    </script>
+
+</body>
+</html>
